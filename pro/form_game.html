@@ -1,0 +1,64 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Game Information Insert Form</title>
+</head>
+<body>
+    <style>
+        .centered {
+          font-size: 30px;
+          color: red;
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <div class="centered">
+        <td>Enter game details</td>
+ <form action="insert_game.php" method="POST">
+  <table>
+     <tr>
+    <td>Game Id :</td>
+   <td><input type="text" name="gid" placeholder="Game ID(Starts with 2)" maxlength = "3" required></td>
+   </tr>
+   <tr>
+    <td>Name of Game :</td>
+    <td><input type="text" name="gname" placeholder="Name" required></td>
+   </tr>
+   <tr>
+    <td>Genre :</td>
+   <td><input type="text" name="genre" placeholder="Genre" required></td>
+   </tr>
+  <tr>
+    <td>Developer :</td>
+   <td><input type="text" name="developer" placeholder="Developer" required></td>
+   </tr>
+  <tr>
+    <td>Platform :</td>
+   <td><input type="text" name="platform" placeholder="Platform" required></td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+      </div>
+  <style>
+html { 
+  background: url(maxresdefault1.jpg) no-repeat center center fixed;  
+  background-position: center;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table
+{
+  color: black;
+}
+</style>
+
+</body>
+</html>

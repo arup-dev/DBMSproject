@@ -1,0 +1,127 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .Search{
+    padding: 12px;
+    color: white;
+    left: 45%;
+  }
+  </style>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-inverse" style="background-color: #563d7c;" style="color: #fff;" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color: #fff;">Entertainment DB</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="select_product.php" style="color: #fff">Product listing</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Insert
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="form_movie.html">Movie</a></li>
+          <li><a href="form_game.html">Game</a></li>
+          <li><a href="form_song.html">Song</a></li>
+          <li><a href="form_critic.html">Critic</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Delete
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="delete_movie.php">All movies only</a></li>
+          <li><a href="delete_game.php">All games only</a></li>
+          <li><a href="delete_song.php">All songs only</a></li>
+          <li><a href="delete_product.php">All</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Sort by genre
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="select_movie.php">Movies</a></li>
+          <li><a href="select_game.php">Games</a></li>
+          <li><a href="select_song.php">Songs</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Sort by popularity
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="select_movie1.php">Movies</a></li>
+          <li><a href="select_game1.php">Games</a></li>
+          <li><a href="select_song1.php">Songs</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">User section
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="form_customer.html">Create account</a></li>
+            <li><a href="signin.html">Wishlist</a></li>
+            <li><a href="form_productown.html">Add to library</a></li>
+          </ul>
+        </li>
+      <li class="Search"><form action="search.php" method="POST">Search <input type="text" name="pid" style="color: black;" placeholder="Product ID" maxlength = "3" required></form></li>
+      </ul>
+          
+  </div>
+  
+</nav> 
+<style>
+.centered {
+	font-size: 30px;
+	color: goldenrod;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+	font-size: 25px;
+	color: black;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+
+
+ <!-- . <img src="iStock-627183716-1210x423.jpg" alt="Snow" style="width:100%;"> -->
+<style>
+html { 
+  background: url(main.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+
+  <div class="centered">Quick queries</div>
+  <div class="centered1">
+    <form action="delete_specific.php" method="POST">
+    <p><table>
+      <tr>
+      <td>Delete specific ID:</td>
+      <td><input type="text" name="pid" placeholder="Product ID" maxlength = "3" required></td>
+     </tr>
+    </table></p>
+   </form>
+   <p><a href="available.php" style="color: black;">Games availability on different platforms</a></p>
+   <p><a href="length.php" style="color: black;">Sort by movie length</a></p>
+   <p><a href="singer.php" style="color: black;">Sort by singer</a></p>
+  </div>
+</body>
+</html>
