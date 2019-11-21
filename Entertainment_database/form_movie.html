@@ -1,0 +1,79 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Movie Information Insert Form</title>
+</head>
+<body>
+    <style>
+        .centered {
+          font-size: 30px;
+          color: blue;
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          transform: translate(-50%, -50%);
+        }
+        .btn
+        {
+          color: blue;
+          padding:6px 16px;
+        }
+      </style>
+      <div class="centered">
+        <td >Enter Movie Details</td>
+ <form action="insert_movie.php" method="POST">
+  <table>
+   <tr>
+    <td>Movie Id :</td>
+    <td><input type="text" name="mid" placeholder="Movie ID(Starts with 1)" maxlength = "3" required></td>
+   </tr>
+   <tr>
+    <td>Movie Name :</td>
+   <td><input type="text" name="mname" placeholder="Name" required></td>
+   </tr>
+  <tr>
+    <td>Genre :</td>
+   <td><input type="text" name="genre" placeholder="Genre" required></td>
+   </tr>
+  <tr>
+    <td>Director Name :</td>
+   <td><input type="text" name="director" placeholder="Director" required></td>
+   </tr>
+   <tr>
+    <td>Duration of movie :</td>
+   <td><input type="text" name="length" placeholder="Movie length (in mins)" required></td>
+   </tr>
+
+   <tr>
+    <td><input type="submit" class="btn" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+      </div>
+ <style>
+html { 
+  background: url(Toyogeki-Movie_Toyooka002-960x720.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-color:red;
+}
+table
+{
+  color: red;
+}.centered1 {
+	position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+</style>
+<div class="centered1">
+    <form action="admin.html" method="GET">
+        <button type="submit">HOME</button>
+      </form>
+</div>
+</body>
+</html>

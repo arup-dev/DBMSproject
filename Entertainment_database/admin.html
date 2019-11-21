@@ -1,0 +1,81 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .Search{
+    padding: 12px;
+    color: blue;
+    left: 150%;
+    /*border-radius: 45;*/
+    /*size:10;*/
+  }
+   </style>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-inverse" style="background-color: #563d7c;" style="color: #fff;" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color: #ff4500;" >Entertainment DB</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="select_product.php" style="color: #fff" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Product listing</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Insert
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="form_movie.html">Movie</a></li>
+          <li><a href="form_game.html">Game</a></li>
+          <li><a href="form_song.html">Song</a></li>
+          <li><a href="form_critic.html">Critic</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Delete
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="delete_movie.php">All movies only</a></li>
+          <li><a href="delete_game.php">All games only</a></li>
+          <li><a href="delete_song.php">All songs only</a></li>
+          <li><a href="delete_product.php">All</a></li>
+        </ul>
+      </li>
+      <li class="Search"><form action="search.php" method="POST"> <input type="text" name="pid" style="color: black;" placeholder="Product ID" maxlength = "3" required">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form></li>
+      </ul>
+          
+  </div>
+  
+</nav>
+ <!-- . <img src="iStock-627183716-1210x423.jpg" alt="Snow" style="width:100%;"> -->
+<style>
+html { 
+  background: url(arqe.png) no-repeat  center fixed; 
+  background-size: 1200px 400px;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+</style>
+  <div class="Search" style="font-size: x-large;">
+      <form action="delete_specific.php" method="POST">
+      <p><table>
+        <tr>
+        <td>Delete specific ID: &nbsp</td>
+        <td><input type="text" name="pid" placeholder="ID" maxlength = "3" required size=4 style="border-radius: 5px;"></td>
+       </tr>
+      </table></p>
+     </form>
+  </div>
+</body>
+</html>

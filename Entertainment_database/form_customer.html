@@ -1,0 +1,56 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Customer Information Insert Form</title>
+</head>
+<body>
+    <style>
+        .centered {
+          font-size: 30px;
+          color: red;
+          position: absolute;
+          top: 43%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <div class="centered">
+        <td>Enter Customer details</td>
+ <form action="insert_customer.php" method="POST">
+  <table>
+   <tr>
+    <td>Customer Id :</td>
+    <td><input type="text" name="cid" placeholder="Customer ID(Starts with 4)" maxlength = "3" required></td>
+   </tr>
+   <tr>
+    <td>Name :</td>
+   <td><input type="text" name="cname" placeholder="Name" required></td>
+   </tr>
+  <tr>
+    <td>Password :</td>
+   <td><input type="text" name="card" placeholder="Password" required></td>
+   </tr>
+  
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+      </div>
+  <style>
+html { 
+  background: url(capture22.png); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table
+{
+  color: black;
+}
+</style>
+
+</body>
+</html>

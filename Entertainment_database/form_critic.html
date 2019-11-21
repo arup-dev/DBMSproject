@@ -1,0 +1,68 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Critic Information Insert Form</title>
+</head>
+<body>
+  <style>
+    .centered {
+      font-size: 30px;
+      color: red;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <div class="centered">
+    <td>Enter critic details</td>
+ <form action="insert_critic.php" method="POST">
+  <table>
+   <tr>
+    <td>Critic Name :</td>
+    <td><input type="text" name="cname" placeholder="Name" required></td>
+   </tr>
+   <tr>
+    <td>Product Id :</td>
+   <td><input type="text" name="pid" placeholder="Product ID" maxlength = "3" required></td>
+   </tr>
+  <tr>
+    <td>Rating :</td>
+   <td><input type="text" name="rating" placeholder="Rating(1-10)" required></td>
+   </tr>
+  
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+  </div>
+  <style>
+    
+html { 
+  background: url(images909.png); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table
+{
+  color: black;
+}
+
+   .centered1 {
+	position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+</style>
+<div class="centered1">
+    <form action="admin.html" method="GET">
+        <button type="submit">HOME</button>
+      </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Song Information Insert Form</title>
+</head>
+<body>
+    <style>
+        .centered {
+          font-size: 30px;
+          color: red;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <div class="centered">
+        <td>Enter song details</td>
+ <form action="insert_song.php" method="POST">
+  <table>
+   <tr>
+    <td>Song Id :</td>
+    <td><input type="text" name="sid" placeholder="Song ID(Starts with 3)" maxlength = "3" required></td>
+   </tr>
+   <tr>
+    <td>Song Name :</td>
+   <td><input type="text" name="sname" placeholder="Name" required></td>
+   </tr>
+  <tr>
+    <td>Genre :</td>
+   <td><input type="text" name="genre" placeholder="Genre" required></td>
+   </tr>
+  
+  <tr>
+    <td>Singer :</td>
+   <td><input type="text" name="singer" placeholder="Singer" required></td>
+   </tr>
+  
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+      </div>
+ <style>
+   .centered1 {
+	position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+html { 
+  background: url(images22.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table
+{
+  color: black;
+}
+</style>
+  <div class="centered1">
+      <form action="admin.html" method="GET">
+          <button type="submit">HOME</button>
+        </form>
+  </div>
+
+</body>
+</html>

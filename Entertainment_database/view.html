@@ -1,0 +1,97 @@
+<!-- author:Abhishek Gupta -->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .Search{
+    padding: 12px;
+    color: blue;
+    left: 100%;
+    /*border-radius: 45;*/
+    /*size:10;*/
+  }
+  </style>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-inverse" style="background-color: #563d7c;" style="color: #fff;" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color: #ff4500;" >Entertainment DB</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="select_product.php" style="color: #fff" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Product listing</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Sort by genre
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="select_movie.php">Movies</a></li>
+          <li><a href="select_game.php">Games</a></li>
+          <li><a href="select_song.php">Songs</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff;" onmouseover="this.style.color='magenta';" onmouseout="this.style.color='#fff';">Sort by popularity
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="select_movie1.php">Movies</a></li>
+          <li><a href="select_game1.php">Games</a></li>
+          <li><a href="select_song1.php">Songs</a></li>
+        </ul>
+      </li>
+      <li class="Search"><form action="search.php" method="POST"> <input type="text" name="pid" style="color: black;" placeholder="Product ID" maxlength = "3" required">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form></li>
+      </ul>
+          
+  </div>
+  
+</nav>
+<style>
+.centered {
+	font-size: 30px;
+	color: black;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+	font-size: 22px;
+	color: red;
+  position: absolute;
+  top: 60%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+
+
+ <!-- . <img src="iStock-627183716-1210x423.jpg" alt="Snow" style="width:100%;"> -->
+<style>
+html { 
+  background: url(colorful-headphones-music-logo-radio-station-assorted-colors-78620074.jpg) no-repeat  center fixed; 
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+</style>
+ <div>
+  <div class="centered">Quick queries</div>
+  <div class="centered1">
+<p><a href="available.php" style="color:red;">Games availability on different platforms</a></p>
+   <p><a href="length.php" style="color: red;">Sort by movie length</a></p>
+   <p><a href="singer.php" style="color: red;">Sort by singer</a></p>
+  </div>
+  
+</body>
+</html>
